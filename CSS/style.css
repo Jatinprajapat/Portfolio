@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: DrukWide;
+  src: url('../Fonts/DrukWideBold.woff');
+}
+h3,h5 {
+    font-family: DrukWide;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.animation {
+    background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient{
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
